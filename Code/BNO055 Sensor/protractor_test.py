@@ -5,11 +5,13 @@
 # 1) If the dots are on the line -> sensor is accurate.
 # 2) If the whiskers are small -> sensor is precise (not noisy).
 
+
+# pip3 install numpy
+
 import time
 import board
-import busio
 import adafruit_bno055
-import numpy as np  # or pip3 install numpy
+import numpy as np  
 
 # Setup
 i2c = board.I2C()
@@ -45,7 +47,7 @@ for target in target_angles:
     print(f"   Saved: Avg={avg:.2f}° | Min={min_val:.2f} | Max={max_val:.2f}")
     results.append([target, avg, min_val, max_val, std_dev])
 
-print("\nDONE! Copy this data to Excel:")
+print("\nDONE! Plot Data:")
 print("Target,Average,Min,Max,StdDev")
 for r in results:
     print(f"{r[0]},{r[1]:.2f},{r[2]:.2f},{r[3]:.2f},{r[4]:.2f}")
