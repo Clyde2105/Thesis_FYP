@@ -1,3 +1,6 @@
+# Purpose: To check if wiring is correct and the sensor is online. 
+# It prints the Heading, Roll and Pitch to the terminal in real-time.
+
 import time
 import board
 import busio

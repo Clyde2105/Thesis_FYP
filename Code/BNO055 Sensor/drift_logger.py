@@ -1,3 +1,6 @@
+# Purpose: Script to generate data for Excel graph. 
+# It records the sensor's drift for exactly 5 minutes (300 seconds) and saves it to a CSV file.
+
 import time
 import board
 import busio
