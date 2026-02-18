@@ -1,0 +1,199 @@
+[INFO] [launch]: All log files can be found below /home/clyde-vella/.ros/log/2026-02-18-18-22-57-396423-clyde-vella-VirtualBox-49608
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gz-1]: process started with pid [49611]
+[INFO] [robot_state_publisher-2]: process started with pid [49612]
+[INFO] [parameter_bridge-3]: process started with pid [49613]
+[INFO] [create-4]: process started with pid [49614]
+[create-4] [INFO] [1771435377.704946282] [ros_gz_sim]: Waiting messages on topic [robot_description].
+[robot_state_publisher-2] [INFO] [1771435377.731979727] [robot_state_publisher]: Robot initialized
+[create-4] [INFO] [1771435378.654674019] [ros_gz_sim]: Entity creation successful.
+[parameter_bridge-3] [INFO] [1771435378.767780581] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[INFO] [create-4]: process has finished cleanly [pid 49614]
+[INFO] [spawner-5]: process started with pid [49712]
+[spawner-5] [INFO] [1771435379.441364377] [spawner_diff_drive_controller]: waiting for service /controller_manager/list_controllers to become available...
+[gz-1] [INFO] [1771435380.140665459] [gz_ros_control]: Loading controller_manager
+[gz-1] [INFO] [1771435380.167672931] [controller_manager]: Using ROS clock for triggering controller manager cycles.
+[gz-1] [INFO] [1771435380.176460190] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[gz-1] [WARN] [1771435380.180311902] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[gz-1] VMware: No 3D enabled (0, Success).
+[gz-1] libEGL warning: egl: failed to create dri2 screen
+[gz-1] MESA: error: ZINK: failed to choose pdev
+[gz-1] libEGL warning: egl: failed to create dri2 screen
+[gz-1] VMware: No 3D enabled (0, Success).
+[gz-1] libEGL warning: egl: failed to create dri2 screen
+[gz-1] [WARN] [1771435381.176323921] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[gz-1] [INFO] [1771435382.077717740] [controller_manager]: Received robot description from topic.
+[gz-1] [INFO] [1771435382.089507840] [gz_ros_control]: The position_proportional_gain has been set to: 0.1
+[gz-1] [INFO] [1771435382.090933619] [gz_ros_control]: Loading joint: left_wheel_joint
+[gz-1] [INFO] [1771435382.090964737] [gz_ros_control]: 	State:
+[gz-1] [INFO] [1771435382.091017477] [gz_ros_control]: 		 velocity
+[gz-1] [INFO] [1771435382.091071990] [gz_ros_control]: 		 position
+[gz-1] [INFO] [1771435382.091324636] [gz_ros_control]: 	Command:
+[gz-1] [INFO] [1771435382.091338642] [gz_ros_control]: 		 velocity
+[gz-1] [INFO] [1771435382.091369300] [gz_ros_control]: Loading joint: right_wheel_joint
+[gz-1] [INFO] [1771435382.091378908] [gz_ros_control]: 	State:
+[gz-1] [INFO] [1771435382.091386462] [gz_ros_control]: 		 velocity
+[gz-1] [INFO] [1771435382.091393947] [gz_ros_control]: 		 position
+[gz-1] [INFO] [1771435382.091400369] [gz_ros_control]: 	Command:
+[gz-1] [INFO] [1771435382.091407532] [gz_ros_control]: 		 velocity
+[gz-1] [INFO] [1771435382.092000069] [controller_manager]: Initialize hardware 'GazeboSystem' 
+[gz-1] [WARN] [1771435382.092123683] [controller_manager.hardware_component.system.GazeboSystem]: Executor is not available during hardware component initialization for 'GazeboSystem'. Skipping node creation!
+[gz-1] [INFO] [1771435382.092400074] [controller_manager]: Successful initialization of hardware 'GazeboSystem'
+[gz-1] [INFO] [1771435382.092816469] [resource_manager]: 'configure' hardware 'GazeboSystem' 
+[gz-1] [INFO] [1771435382.092832539] [gz_ros_control]: System Successfully configured!
+[gz-1] [INFO] [1771435382.092847918] [resource_manager]: Successful 'configure' of hardware 'GazeboSystem'
+[gz-1] [INFO] [1771435382.092860512] [resource_manager]: 'activate' hardware 'GazeboSystem' 
+[gz-1] [INFO] [1771435382.092885268] [resource_manager]: Successful 'activate' of hardware 'GazeboSystem'
+[gz-1] [WARN] [1771435382.093102067] [controller_manager]: Component 'GazeboSystem' does not have read or write statistics initialized, skipping registration.
+[gz-1] [INFO] [1771435382.093119430] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+[gz-1] [WARN] [1771435382.214618237] [gz_ros_control]:  Desired controller update period (0.0333333 s) is slower than the gazebo simulation period (0.001 s).
+[gz-1] [INFO] [1771435383.247209241] [controller_manager]: Loading controller : 'diff_drive_controller' of type 'diff_drive_controller/DiffDriveController'
+[gz-1] [INFO] [1771435383.247455676] [controller_manager]: Loading controller 'diff_drive_controller'
+[gz-1] [INFO] [1771435383.295030980] [controller_manager]: Controller 'diff_drive_controller' node arguments: --ros-args --params-file /home/clyde-vella/ros2_ws/install/artbot_sim/share/artbot_sim/config/ros2_control.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[spawner-5] [INFO] [1771435383.408692508] [spawner_diff_drive_controller]: Loaded diff_drive_controller
+[gz-1] [INFO] [1771435383.418999533] [controller_manager]: Configuring controller: 'diff_drive_controller'
+[gz-1] [INFO] [1771435383.501537769] [controller_manager]: Activating controllers: [ diff_drive_controller ]
+[gz-1] [INFO] [1771435383.551331075] [controller_manager]: Successfully switched controllers!
+[spawner-5] [INFO] [1771435383.623076919] [spawner_diff_drive_controller]: Configured and activated diff_drive_controller
+[INFO] [spawner-5]: process has finished cleanly [pid 49712]
+[INFO] [spawner-6]: process started with pid [49778]
+[spawner-6] [INFO] [1771435384.415637912] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[gz-1] [INFO] [1771435387.242767812] [controller_manager]: Loading controller : 'joint_state_broadcaster' of type 'joint_state_broadcaster/JointStateBroadcaster'
+[gz-1] [INFO] [1771435387.242846831] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[gz-1] [INFO] [1771435387.277164940] [controller_manager]: Controller 'joint_state_broadcaster' node arguments: --ros-args --params-file /home/clyde-vella/ros2_ws/install/artbot_sim/share/artbot_sim/config/ros2_control.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[spawner-6] [INFO] [1771435387.393740384] [spawner_joint_state_broadcaster]: Loaded joint_state_broadcaster
+[gz-1] [INFO] [1771435387.409430067] [controller_manager]: Configuring controller: 'joint_state_broadcaster'
+[gz-1] [INFO] [1771435387.411166351] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[gz-1] [INFO] [1771435387.505043779] [controller_manager]: Activating controllers: [ joint_state_broadcaster ]
+[gz-1] [INFO] [1771435387.567558831] [controller_manager]: Successfully switched controllers!
+[spawner-6] [INFO] [1771435387.645286445] [spawner_joint_state_broadcaster]: Configured and activated joint_state_broadcaster
+[INFO] [spawner-6]: process has finished cleanly [pid 49778]
+[INFO] [ink_spawner.py-7]: process started with pid [49796]
+[INFO] [drive_square_dd.py-8]: process started with pid [49797]
+[ink_spawner.py-7] [INFO] [1771435389.100415073] [ink_spawner]: Ink spawner ready (ros_gz). Dots every ~0.020 m in world 'art_world'. Prefix: ink_1771435388943_
+[drive_square_dd.py-8] [INFO] [1771435389.101141208] [drive_square_dd]: DriveSquare ready (odom-waypoint).
+[drive_square_dd.py-8] [INFO] [1771435389.134291534] [drive_square_dd]: Start=(0.000,-0.000) yaw=-0.000 -> yaw0=0.000
+[drive_square_dd.py-8] [INFO] [1771435389.222779504] [drive_square_dd]: Aligned. Driving square...
+[ink_spawner.py-7] [WARN] [1771435390.685303240] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00000' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmpvodo4z_1.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435391.224837724] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00001' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmpa1l6u93t.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435391.538243037] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00002' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmpu2q4o_h9.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435392.071370307] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00003' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmpbq46n597.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435392.455618379] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00004' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmp3ai_lgrd.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435392.888076863] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00005' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmp55j9card.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435393.289983751] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00006' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmpxx2p8a4z.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435393.812407083] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00007' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmp6ota0pp1.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435394.309119231] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00008' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmpdvcz0i0v.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435394.643981521] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00009' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmpeok65f_4.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435394.973422744] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00010' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmp7tsi2zln.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435395.536389350] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00011' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmpqt_xqhjt.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435395.919877361] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00012' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmp2fq0yfc0.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435396.358761234] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00013' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmpkktz2ap2.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435396.711455342] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00014' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmp1gn2l8oz.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[drive_square_dd.py-8] [INFO] [1771435397.092219481] [drive_square_dd]: Reached corner 1/4 (dist=0.019).
+[ink_spawner.py-7] [WARN] [1771435397.323587531] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00015' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmpuwfygkz_.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[drive_square_dd.py-8] [INFO] [1771435401.200880547] [drive_square_dd]: Turning complete. Next yaw=1.571
+[ink_spawner.py-7] [WARN] [1771435402.094009047] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00016' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmpx723ipyh.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435402.569503579] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00017' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmpf_aav985.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435403.030927030] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00018' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmphtmfdm94.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435403.390770153] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00019' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmpq0_490ah.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435403.815972519] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00020' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmp5p7vz5k3.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435404.208174000] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00021' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmps7ffcw6s.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435404.608753277] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00022' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmpfcvjuj8_.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435404.931113953] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00023' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmp4vwyof5q.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435405.379656742] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00024' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmp7bhjyer8.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435405.810768041] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00025' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmp6zrtdg7a.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435406.277795068] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00026' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmpof6_kcxw.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+[ink_spawner.py-7] [WARN] [1771435406.594809918] [ink_spawner]: Failed to spawn dot 'ink_1771435388943_00027' (rc=109). stderr:
+[ink_spawner.py-7] The following arguments were not expected: /tmp/tmpg71yub22.req --req-file
+[ink_spawner.py-7] Run with --help for more information.
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[robot_state_publisher-2] [INFO] [1771435406.926310608] [rclcpp]: signal_handler(signum=2)
+[parameter_bridge-3] [INFO] [1771435406.926370450] [rclcpp]: signal_handler(signum=2)
+[parameter_bridge-3] Failed to delete datawriter, at ./src/publisher.cpp:45 during '__function__'
+[ink_spawner.py-7] Traceback (most recent call last):
+[ink_spawner.py-7]   File "/home/clyde-vella/ros2_ws/install/artbot_sim/lib/artbot_sim/ink_spawner.py", line 144, in <module>
+[ink_spawner.py-7]     main()
+[ink_spawner.py-7]   File "/home/clyde-vella/ros2_ws/install/artbot_sim/lib/artbot_sim/ink_spawner.py", line 140, in main
+[ink_spawner.py-7]     rclpy.shutdown()
+[ink_spawner.py-7]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 134, in shutdown
+[ink_spawner.py-7]     _shutdown(context=context)
+[ink_spawner.py-7]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/utilities.py", line 82, in shutdown
+[ink_spawner.py-7]     context.shutdown()
+[ink_spawner.py-7]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/context.py", line 129, in shutdown
+[ink_spawner.py-7]     self.__context.shutdown()
+[ink_spawner.py-7] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:333
+[drive_square_dd.py-8] Traceback (most recent call last):
+[drive_square_dd.py-8]   File "/home/clyde-vella/ros2_ws/install/artbot_sim/lib/artbot_sim/drive_square_dd.py", line 212, in <module>
+[drive_square_dd.py-8]     main()
+[drive_square_dd.py-8]   File "/home/clyde-vella/ros2_ws/install/artbot_sim/lib/artbot_sim/drive_square_dd.py", line 208, in main
+[drive_square_dd.py-8]     rclpy.shutdown()
+[drive_square_dd.py-8]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 134, in shutdown
+[drive_square_dd.py-8]     _shutdown(context=context)
+[drive_square_dd.py-8]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/utilities.py", line 82, in shutdown
+[drive_square_dd.py-8]     context.shutdown()
+[drive_square_dd.py-8]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/context.py", line 129, in shutdown
+[drive_square_dd.py-8]     self.__context.shutdown()
+[drive_square_dd.py-8] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:333
+[INFO] [parameter_bridge-3]: process has finished cleanly [pid 49613]
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 49612]
+[ERROR] [drive_square_dd.py-8]: process has died [pid 49797, exit code 1, cmd '/home/clyde-vella/ros2_ws/install/artbot_sim/lib/artbot_sim/drive_square_dd.py --ros-args --params-file /tmp/launch_params_1b9buma6'].
+[ERROR] [ink_spawner.py-7]: process has died [pid 49796, exit code 1, cmd '/home/clyde-vella/ros2_ws/install/artbot_sim/lib/artbot_sim/ink_spawner.py --ros-args --params-file /tmp/launch_params_6e55e1_6'].
+[gz-1] [INFO] [1771435407.523212944] [controller_manager.pal_statistics]: Async messages lost 0
+[gz-1] [INFO] [1771435407.523356134] [controller_manager.pal_statistics]: publish_async_failures_ 0
+[gz-1] [INFO] [1771435407.526204615] [controller_manager.pal_statistics]: Async messages lost 0
+[gz-1] [INFO] [1771435407.526278124] [controller_manager.pal_statistics]: publish_async_failures_ 4
+[INFO] [gz-1]: process has finished cleanly [pid 49611]
