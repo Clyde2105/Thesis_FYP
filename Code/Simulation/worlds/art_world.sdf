@@ -1,0 +1,38 @@
+<sdf version="1.6">
+  <world name="art_world">
+    
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"></plugin>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"></plugin>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"></plugin>
+
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Sun</uri>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Ground Plane</uri>
+    </include>
+
+    <model name="a2_paper">
+      <static>true</static>
+      <pose>0 0 0.001 0 0 0</pose> <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>4.0 4.0 0.001</size> </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient> <diffuse>1 1 1 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+          </material>
+        </visual>
+        <!-- Visual-only paper (collision comes from the Ground Plane). This avoids
+             paper-vs-ground contact fighting that can pin small robots. -->
+      </link>
+    </model>
+
+  </world>
+</sdf>
