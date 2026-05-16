@@ -165,17 +165,17 @@ def run_trial():
     if shape_name == "Line":
         draw_line()
     elif shape_name == "Square":
-        draw_polygon(4, [50, 51, 50, 51], [21, 20, 20, 22], [21, 20, 20, 20], 66.0, 90.0)
+        draw_polygon(4, [40, 40, 40, 40], [21, 20, 20, 22], [21, 20, 20, 20], 66.0, 90.0)
     elif shape_name == "Rectangle":
-        draw_polygon(4, [60, 31, 60, 31], [21, 20, 20, 22], [21, 20, 20, 20], 66.0, 90.0)
+        draw_polygon(4, [40, 20, 40, 20], [21, 20, 20, 22], [21, 20, 20, 20], 66.0, 90.0)
     elif shape_name == "Triangle":
-        draw_polygon(3, [60, 60, 60], [21, 21, 21], [21, 21, 21], 96.0, 120.0)
+        draw_polygon(3, [30, 30, 30], [21, 21, 21], [21, 21, 21], 96.0, 120.0)
     elif shape_name == "Circle":
         send_motor_cmd(79, 82, 1, 0)
         time.sleep(4.5 if CURRENT_MODE == "OPEN" else 4.5) # Hardcoded for test
         send_motor_cmd(0, 0, 0, 0)
     elif shape_name == "Star":
-        draw_polygon(5, [60, 60, 60, 60, 60], [21, 21, 21, 21, 21], [21, 21, 21, 21, 21], 115.0, 144.0)
+        draw_polygon(5, [30, 30, 30, 30, 30], [21, 21, 21, 21, 21], [21, 21, 21, 21, 21], 115.0, 144.0)
 
     execution_time = time.time() - start_time
     
