@@ -282,7 +282,7 @@ def align_to_absolute_heading(target_heading):
         if abs(error) <= 0.8:
             break
 
-        if error < 0:
+        if error > 0:
             arduino.write(f"M:{nudge_power},{nudge_power},1,0\n".encode())
         else:
             arduino.write(f"M:{nudge_power},{nudge_power},0,1\n".encode())
@@ -406,7 +406,7 @@ def draw_line(target_cm):
 
 def draw_triangle():
     print("\n=== STARTING ROUTINE: EQUILATERAL TRIANGLE ===")
-    SIDE_TICKS = 60
+    SIDE_TICKS = 30
     FORWARD_TICKS = 21
     REVERSE_TICKS = 21
     TURN_ANGLE = 120.0
