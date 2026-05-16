@@ -1,0 +1,7 @@
+Shape,Open Loop Error (mm),Closed Loop Error (mm),Open Loop Time (s),Closed Loop Time (s)
+Circle,8,1,4.5,4.5
+Line,4,2,2.91,3
+Rectangle,174,58.1,39.42,41.63
+Triangle,310,65,30.29,31.02
+Square,180,37.4,37.71,39.2
+Star,275,20.7,39.5,43.25
