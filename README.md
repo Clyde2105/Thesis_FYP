@@ -406,11 +406,3 @@ Bachelor of Science in Information Technology (Honours) (Artificial Intelligence
 Faculty of ICT, University of Malta  
 Supervisor: Dr Ingrid Galea  
 May 2026
-
-## Disclaimer
-
-This repository contains research and prototype code developed for an academic final-year project. It is provided for transparency, reproducibility and reference. The code may require calibration before being used on different hardware.
-
-## License
-
-No license file is currently included in this repository. Until a license is added, all rights are reserved by the author.
