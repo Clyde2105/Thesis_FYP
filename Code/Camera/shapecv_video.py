@@ -262,7 +262,7 @@ def optimal_imu_turn(target_heading, tolerance=0.5):
             time.sleep(0.06)
             continue
         else:
-            turn_speed = max(48, min(int(abs(error) * 2), 70))
+            turn_speed = max(55, min(int(abs(error) * 2), 70))
             if error > 0: send_motor_cmd(turn_speed, turn_speed, 1, 0)
             else: send_motor_cmd(turn_speed, turn_speed, 0, 1)
             time.sleep(0.02)
